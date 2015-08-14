@@ -2,12 +2,15 @@
 <html>
 <head>
 	<title>Google.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		ul {
 			display:inline;
 			list-style:none;
 			margin:0px;
 			padding:0px;
+			position:absolute;
+			left:700px;
 		}
 		li{
 			display:inline;
@@ -44,16 +47,29 @@
 			height:30px;
 			width:30px;
 			background-color:#A5C3FF;
-			background-position:-1px 0px;
+			background-position:-10px 0px;
 			border-radius:100%;
 			display:inline;
 
 		}
 		form{
-			margin:auto;
+			position:absolute;
+			top:55%;
+			left:31%;
+		}
+		#box {
+			width:500px;
+		}
+		.btn{
+			position:relative;
+			left:150px;
 		}
 		img{
 			margin:auto;
+			position:absolute;
+			left:35%;
+			top:30%;
+			max-width:30%;
 		}
 	</style>
 </head>
@@ -75,10 +91,10 @@
 	</div>
 	<div><img src="https://www.google.com/images/srpr/logo11w.png"/></div>
 	<form>
-		<input type = "text" />
+		<input id = "box" type = "text" />
 		<br></br>
-		<input type = "submit" value = "Google Search"/>
-		<input type = "submit" value = "I'm feelin Lucky"/>
+		<input class="btn" type = "submit" value = "Google Search"/>
+		<input class="btn" type = "submit" value = "I'm feelin Lucky"/>
 	</form>
 	<p>Advertising Business About</p>
 	<p>Privacy Terms Settings</p>
