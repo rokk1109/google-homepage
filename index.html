@@ -10,15 +10,16 @@
 			margin:0px;
 			padding:0px;
 			position:absolute;
-			left:700px;
+			left: calc(100% - 350px);
+			color:#999999;
 		}
 		li{
 			display:inline;
-			border: 1px dashed red;
 		}
 		.ninesquareicon{
 			position:absolute;
-			left:500px;
+			top:-5px;
+			left:150px;
 			background-image: url(https://ssl.gstatic.com/gb/images/i1_0430b5ba.png);
 			background-repeat:no-repeat;
 			height:25px;
@@ -29,7 +30,8 @@
 		}
 			.bell{
 			position:absolute;
-			left:550px;
+			top:-5px;
+			left:200px;
 			background-image: url(https://ssl.gstatic.com/gb/images/i1_0430b5ba.png);
 			background-repeat:no-repeat;
 			height:25px;
@@ -41,13 +43,14 @@
 		}
 		.person{
 			position:absolute;
-			left:600px;
+			top:-5px;
+			left:260px;
 			background-image: url(https://lh6.googleusercontent.com/-SvgFEOdJ7C8/AAAAAAAAAAI/AAAAAAAAAAA/zEreDwpjArQ/s32-c/photo.jpg);
 			background-repeat:no-repeat;
 			height:30px;
 			width:30px;
 			background-color:#A5C3FF;
-			background-position:-10px 0px;
+			background-position:-1px -3px;
 			border-radius:100%;
 			display:inline;
 
@@ -69,7 +72,18 @@
 			position:absolute;
 			left:35%;
 			top:30%;
-			max-width:30%;
+			width:30%;
+		}
+		.bus{
+			position:absolute;
+			top: 600px;
+			color:#999999;
+		}
+		.terms{
+			position:absolute;
+			top:600px;
+			left: calc( 100% - 150px);
+			color:#999999;
 		}
 	</style>
 </head>
@@ -96,7 +110,7 @@
 		<input class="btn" type = "submit" value = "Google Search"/>
 		<input class="btn" type = "submit" value = "I'm feelin Lucky"/>
 	</form>
-	<p>Advertising Business About</p>
-	<p>Privacy Terms Settings</p>
+	<p class = "bus">Advertising Business About</p>
+	<p class = "terms">Privacy Terms Settings</p>
 </body>
 </html>
